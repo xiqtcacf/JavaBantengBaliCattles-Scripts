@@ -1,4 +1,4 @@
-# Scripts for
+# Scripts for (still working on)
 ## Wang, X., ... Heller, R. (2025). Population structure and domestication history of the Javan banteng (Bos javanicus javanicus)
 
 ### Mapping
@@ -60,6 +60,6 @@ Script to infer linkage disequilibrium by ngsLD;
 
 Script to infer XP-EHH;
 
-### 9.Genetic load
+### Genetic load
 
 
