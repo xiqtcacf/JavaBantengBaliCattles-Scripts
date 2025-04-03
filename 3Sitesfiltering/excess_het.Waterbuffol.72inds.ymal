@@ -1,0 +1,28 @@
+info: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/samplesbased_genolikes/excess_het/72inds.bamlist.Waterbuffalo.bam.info
+outmain: "results"
+scriptsdir: "scripts"
+chroms: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/water_buffalo.reference.fna.fai.autosomes.list
+ref: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/water_buffalo.reference.fna
+params:
+ angsd:
+  minQ: 30
+  minMapQ: 25
+ pcangsd:
+  e:
+   - 0
+   - 1
+   - 2
+   - 3
+   - 4
+   - 5
+   - 6
+   - 7
+   - 8
+   - 9
+   - 10
+ filter:
+  minF: -0.9
+  w: 10000
+  lrt: 24
+  
+  

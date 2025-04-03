@@ -1,0 +1,10 @@
+groups:
+  lowdepth: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/samplesbased_genolikes/depth/BosTau9.CoverageBelow6x.16inds.bamlist
+  highdepth: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/samplesbased_genolikes/depth/BosTau9.CoverageAbove6x.85inds.bamlist
+outmain: results
+chroms: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/bosTau9.fasta.fai.autosomes.list
+angsdparams:
+  maxdepth: 5000
+  minQ: 30
+  minMapQ: 25
+allbed: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/bosTau9.fasta.fai.autosomes.bed
