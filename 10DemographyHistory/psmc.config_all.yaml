@@ -1,0 +1,409 @@
+## LINK TO SLIDES / MANUAL:
+## SOFTWARE
+PSMC_DIR: "/home/wlk579/Server_bos/apps/psmc"
+BCFTOOLS: "/home/wlk579/Server_bos/apps/bcftools"
+VCFUTILS: "/projects/popgen/apps/Modules/software/bcftools/1.16/bin/vcfutils.pl"
+
+ALLELE_SUPPORT: 2 # 1 3
+MIN_MQ: 30
+MIN_BQ: 25
+
+OUTDIR: "result"
+REF: "/home/wlk579/1.0JavaBanteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta"   ## must be the same as the one used for mapping
+GOODBED: "/home/wlk579/1.0JavaBanteng_project/3.sites_filtering/CombineAll/CombinedAll.good_sites.Banteng.bed"  ## Sites that will be INCLUDED in the analysis
+
+SAMPLES:
+  B._javanicus_MZBR_1539: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._javanicus_MZBR_1539.Banteng.bam
+  B._javanicus_MZBR_1601: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._javanicus_MZBR_1601.Banteng.bam
+  B._javanicus_MZBR_1603: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._javanicus_MZBR_1603.Banteng.bam
+  B._javanicus_MZBR_1607: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._javanicus_MZBR_1607.Banteng.bam
+  B._javanicus_MZBR_1623: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._javanicus_MZBR_1623.Banteng.bam
+  LIB112399_Banteng_84B_Texas: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/LIB112399_Banteng_84B_Texas.Banteng.bam
+  LIB112403_Banteng_99B_Texas: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/LIB112403_Banteng_99B_Texas.Banteng.bam
+  LIB112406_Banteng_97_1_Texas: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/LIB112406_Banteng_97_1_Texas.Banteng.bam
+  LIB112407_Banteng_85B_Texas: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/LIB112407_Banteng_85B_Texas.Banteng.bam
+  LIB112408_Banteng_82B_Texas: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/LIB112408_Banteng_82B_Texas.Banteng.bam
+  LIB112409_Banteng_86B1_Texas: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/LIB112409_Banteng_86B1_Texas.Banteng.bam
+  LIB112400_Banteng_88B_Texas: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/LIB112400_Banteng_88B_Texas.Banteng.bam
+  LIB112402_Banteng_90B_Texas: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/LIB112402_Banteng_90B_Texas.Banteng.bam
+  LIB112405_Banteng_0805B_Texas: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/LIB112405_Banteng_0805B_Texas.Banteng.bam
+  B._javanicus_Java_643: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._javanicus_Java_643.Banteng.bam
+  B._javanicus_Java_904: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._javanicus_Java_904.Banteng.bam
+  B._javanicus_Java_906: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._javanicus_Java_906.Banteng.bam
+  N_2hmr: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_2hmr.Banteng.bam
+  N_5hmr_1: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_5hmr_1.Banteng.bam
+  N_6hmr: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_6hmr.Banteng.bam
+  N_6t_11: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_6t_11.Banteng.bam
+  N_Gt_25: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_Gt_25.Banteng.bam
+  N_gt15: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_gt15.Banteng.bam
+  N_gt16: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_gt16.Banteng.bam
+  N_gt6: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_gt6.Banteng.bam
+  N_gt8: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_gt8.Banteng.bam
+  N_kb_3: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_kb_3.Banteng.bam
+  N_mk01: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_mk01.Banteng.bam
+  N_mk1: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_mk1.Banteng.bam
+  N_tk_1: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_tk_1.Banteng.bam
+  N_tk5: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_tk5.Banteng.bam
+  N_tk7: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_tk7.Banteng.bam
+  N_wn_2: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_wn_2.Banteng.bam
+  N_wn_4: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_wn_4.Banteng.bam
+  N_y_13: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_y_13.Banteng.bam
+  N_6t_7: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_6t_7.Banteng.bam
+  N_12B_copy: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_12B_copy.Banteng.bam
+  N_13B: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_13B.Banteng.bam
+  N_14B: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_14B.Banteng.bam
+  N_15B: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_15B.Banteng.bam
+  N_17B: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_17B.Banteng.bam
+  N_18B: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_18B.Banteng.bam
+  N_19B: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_19B.Banteng.bam
+  N_20B: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_20B.Banteng.bam
+  N_4B: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_4B.Banteng.bam
+  N_5B_copy: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_5B_copy.Banteng.bam
+  N_6B_copy: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_6B_copy.Banteng.bam
+  N_7B: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_7B.Banteng.bam
+  N_2B_copy: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/N_2B_copy.Banteng.bam
+  a1: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a1.Banteng.bam
+  a5: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a5.Banteng.bam
+  a6: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a6.Banteng.bam
+  a7: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a7.Banteng.bam
+  a8: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a8.Banteng.bam
+  a10: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a10.Banteng.bam
+  a12: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a12.Banteng.bam
+  a45: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a45.Banteng.bam
+  a47: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a47.Banteng.bam
+  a48: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a48.Banteng.bam
+  a49: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a49.Banteng.bam
+  a50: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/a50.Banteng.bam
+  Bali_cattle_Indonesia_ypt2224: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Bali_cattle_Indonesia_ypt2224.Banteng.bam
+  Bali_cattle_Indonesia_ypt2225: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Bali_cattle_Indonesia_ypt2225.Banteng.bam
+  Bali_cattle_Indonesia_ypt2226: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Bali_cattle_Indonesia_ypt2226.Banteng.bam
+  Bali_cattle_Indonesia_ypt2227: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Bali_cattle_Indonesia_ypt2227.Banteng.bam
+  Bali_cattle_Indonesia_ypt2228: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Bali_cattle_Indonesia_ypt2228.Banteng.bam
+  Bali_cattle_Indonesia_ypt2230: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Bali_cattle_Indonesia_ypt2230.Banteng.bam
+  Bali_cattle_Indonesia_ypt2231: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Bali_cattle_Indonesia_ypt2231.Banteng.bam
+  Bali_cattle_Indonesia_ypt2234: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Bali_cattle_Indonesia_ypt2234.Banteng.bam
+  Dexter_AG0144: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Dexter_AG0144.Banteng.bam
+  Limousin_ROUSTAN: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Limousin_ROUSTAN.Banteng.bam
+  Scottish_Highland_HLAGBRM: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Scottish_Highland_HLAGBRM.Banteng.bam
+  Western_Finn_S7: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Western_Finn_S7.Banteng.bam
+  Boskarin_BK1: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Boskarin_BK1.Banteng.bam
+  Limia_LM1: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Limia_LM1.Banteng.bam
+  Maltese_4_830315: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Maltese_4_830315.Banteng.bam
+  Podolica_PO1: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Podolica_PO1.Banteng.bam
+  Tiroler_Grauvieh_ETH_107: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Tiroler_Grauvieh_ETH_107.Banteng.bam
+  Kholmogory_KHO_A9: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Kholmogory_KHO_A9.Banteng.bam
+  Nelore_BINE1: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Nelore_BINE1.Banteng.bam
+  Nelore_BINE2: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Nelore_BINE2.Banteng.bam
+  Bhagnari_23: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Bhagnari_23.Banteng.bam
+  Gir_BIGI3: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Gir_BIGI3.Banteng.bam
+  Gir_BIGI4: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Gir_BIGI4.Banteng.bam
+  Hariana_Har03: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Hariana_Har03.Banteng.bam
+  Kangayam_SAMN10131257: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Kangayam_SAMN10131257.Banteng.bam
+  Lohani_18: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Lohani_18.Banteng.bam
+  Red_Sindhi_303: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Red_Sindhi_303.Banteng.bam
+  Sahiwal_Sha3b: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Sahiwal_Sha3b.Banteng.bam
+  Tharparkar_Thar1: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Tharparkar_Thar1.Banteng.bam
+  Tharparkar_SAMN10131223: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Tharparkar_SAMN10131223.Banteng.bam
+  Vechur_SAMN10131258: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Vechur_SAMN10131258.Banteng.bam
+  B._gaurus_O.Zoo_5443: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._gaurus_O.Zoo_5443.Banteng.bam
+  B._gaurus_Yunnan_ypr115: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._gaurus_Yunnan_ypr115.Banteng.bam
+  B._gaurus_W.Zoo_OGRUNKF_5: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/B._gaurus_W.Zoo_OGRUNKF_5.Banteng.bam
+  S._caffer_98_608: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/S._caffer_98_608.Banteng.bam
+  Kenya_2_First: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Kenya_2_First.Banteng.bam
+  Kenya_2_Second: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/0Using.allBams.passedQC/Kenya_2_Second.Banteng.bam
+
+DEPTHS:
+  B._javanicus_MZBR_1539:
+    - 1  #####depth/3
+    - 11  #####depth*2
+  B._javanicus_MZBR_1601:
+    - 1
+    - 10.27334229866178
+  B._javanicus_MZBR_1603:
+    - 1
+    - 10
+  B._javanicus_MZBR_1607:
+    - 1
+    - 10
+  B._javanicus_MZBR_1623:
+    - 1
+    - 9
+  LIB112399_Banteng_84B_Texas:
+    - 6
+    - 38
+  LIB112403_Banteng_99B_Texas:
+    - 7
+    - 44
+  LIB112406_Banteng_97_1_Texas:
+    - 4
+    - 28
+  LIB112407_Banteng_85B_Texas:
+    - 10
+    - 65
+  LIB112408_Banteng_82B_Texas:
+    - 6
+    - 39
+  LIB112409_Banteng_86B1_Texas:
+    - 4
+    - 30
+  LIB112400_Banteng_88B_Texas:
+    - 6
+    - 42
+  LIB112402_Banteng_90B_Texas:
+    - 12
+    - 73
+  LIB112405_Banteng_0805B_Texas:
+    - 6
+    - 37
+  B._javanicus_Java_643:
+    - 1
+    - 12
+  B._javanicus_Java_904:
+    - 0
+    - 3
+  B._javanicus_Java_906:
+    - 1
+    - 7
+  N_2hmr:
+    - 3
+    - 23
+  N_5hmr_1:
+    - 3
+    - 24
+  N_6hmr:
+    - 3
+    - 20
+  N_6t_11:
+    - 3
+    - 24
+  N_Gt_25:
+    - 4
+    - 25
+  N_gt15:
+    - 3
+    - 24
+  N_gt16:
+    - 3
+    - 19
+  N_gt6:
+    - 3
+    - 21
+  N_gt8:
+    - 3
+    - 24
+  N_kb_3:
+    - 3
+    - 23
+  N_mk01:
+    - 4
+    - 26
+  N_mk1:
+    - 3
+    - 24
+  N_tk_1:
+    - 3
+    - 23
+  N_tk5:
+    - 3
+    - 23
+  N_tk7:
+    - 3
+    - 22
+  N_wn_2:
+    - 3
+    - 21
+  N_wn_4:
+    - 3
+    - 23
+  N_y_13:
+    - 4
+    - 25
+  N_6t_7:
+    - 3
+    - 24
+  N_12B_copy:
+    - 3
+    - 24
+  N_13B:
+    - 4
+    - 27
+  N_14B:
+    - 3
+    - 24
+  N_15B:
+    - 3
+    - 23
+  N_17B:
+    - 3
+    - 24
+  N_18B:
+    - 4
+    - 26
+  N_19B:
+    - 3
+    - 23
+  N_20B:
+    - 4
+    - 26
+  N_4B:
+    - 3
+    - 24
+  N_5B_copy:
+    - 3
+    - 24
+  N_6B_copy:
+    - 5
+    - 32
+  N_7B:
+    - 4
+    - 27
+  N_2B_copy:
+    - 3
+    - 22
+  a1:
+    - 3
+    - 24
+  a5:
+    - 3
+    - 23
+  a6:
+    - 3
+    - 22
+  a7:
+    - 3
+    - 22
+  a8:
+    - 3
+    - 22
+  a10:
+    - 4
+    - 25
+  a12:
+    - 3
+    - 23
+  a45:
+    - 3
+    - 22
+  a47:
+    - 3
+    - 22
+  a48:
+    - 3
+    - 24
+  a49:
+    - 3
+    - 24
+  a50:
+    - 4
+    - 25
+  Bali_cattle_Indonesia_ypt2224:
+    - 1
+    - 10
+  Bali_cattle_Indonesia_ypt2225:
+    - 1
+    - 9
+  Bali_cattle_Indonesia_ypt2226:
+    - 1
+    - 11
+  Bali_cattle_Indonesia_ypt2227:
+    - 2
+    - 13
+  Bali_cattle_Indonesia_ypt2228:
+    - 1
+    - 10
+  Bali_cattle_Indonesia_ypt2230:
+    - 7
+    - 45
+  Bali_cattle_Indonesia_ypt2231:
+    - 1
+    - 9
+  Bali_cattle_Indonesia_ypt2234:
+    - 1
+    - 12
+  Dexter_AG0144:
+    - 4
+    - 30
+  Limousin_ROUSTAN:
+    - 4
+    - 25
+  Scottish_Highland_HLAGBRM:
+    - 11
+    - 71
+  Western_Finn_S7:
+    - 3
+    - 22
+  Boskarin_BK1:
+    - 2
+    - 18
+  Limia_LM1:
+    - 2
+    - 17
+  Maltese_4_830315:
+    - 2
+    - 16
+  Podolica_PO1:
+    - 2
+    - 17
+  Tiroler_Grauvieh_ETH_107:
+    - 6
+    - 42
+  Kholmogory_KHO_A9:
+    - 4
+    - 25
+  Nelore_BINE1:
+    - 2
+    - 13
+  Nelore_BINE2:
+    - 1
+    - 11
+  Bhagnari_23:
+    - 4
+    - 25
+  Gir_BIGI3:
+    - 3
+    - 24
+  Gir_BIGI4:
+    - 1
+    - 8
+  Hariana_Har03:
+    - 10
+    - 63
+  Kangayam_SAMN10131257:
+    - 4
+    - 28
+  Lohani_18:
+    - 6
+    - 42
+  Red_Sindhi_303:
+    - 6
+    - 41
+  Sahiwal_Sha3b:
+    - 6
+    - 38
+  Tharparkar_Thar1:
+    - 4
+    - 30
+  Tharparkar_SAMN10131223:
+    - 3
+    - 22
+  Vechur_SAMN10131258:
+    - 3
+    - 23
+  B._gaurus_O.Zoo_5443:
+    - 19
+    - 116
+  B._gaurus_Yunnan_ypr115:
+    - 6
+    - 40
+  B._gaurus_W.Zoo_OGRUNKF_5:
+    - 11
+    - 69
+  S._caffer_98_608:
+    - 9
+    - 57
+  Kenya_2_First:
+    - 6
+    - 37
+  Kenya_2_Second:
+    - 5
+    - 36
