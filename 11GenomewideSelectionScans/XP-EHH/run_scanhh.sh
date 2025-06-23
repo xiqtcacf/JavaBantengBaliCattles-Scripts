@@ -20,5 +20,7 @@ bcftools view -S domesticJavaPop_noAus.SampleID.txt -Oz -o phased.BantengPro.ban
 bcftools view -S wildJavaPop_noTexas_zooOnly.SampleID.txt -Oz -o phased.BantengPro.bantengRef.sites_variable_noindels_nomultiallelics.wildJavaBanteng_Zoo.allPolymorphic.noMissing.vcf.gz phased.BantengPro.bantengRef.sites_variable_noindels_nomultiallelics.wildZoo_dom.allPolymorphic.noMissing.vcf.gz
 
 # Running whole genome scan on each population on parallel in separate chromosomes
-for chr in $(seq 1 29); do Rscript scan_hh_with_rehh.R phased.BantengPro.bantengRef.sites_variable_noindels_nomultiallelics.domesticJavaBanteng.allPolymorphic.noMissing.vcf.gz $chr &; done
-for chr in $(seq 1 29); do Rscript scan_hh_with_rehh.R phased.BantengPro.bantengRef.sites_variable_noindels_nomultiallelics.wildJavaBanteng_Zoo.allPolymorphic.noMissing.vcf.gz $chr &; done
+for chr in $(seq 1 29); do Rscript scan_hh_with_rehh.R phased.BantengPro.bantengRef.sites_variable_noindels_nomultiallelics.domesticJavaBanteng.allPolymorphic.noMissing.vcf.gz $chr domesticJavaBanteng &; done
+for chr in $(seq 1 29); do Rscript scan_hh_with_rehh.R phased.BantengPro.bantengRef.sites_variable_noindels_nomultiallelics.wildJavaBanteng_Zoo.allPolymorphic.noMissing.vcf.gz $chr wildJavaBantengZoo &; done
+# The above comands will output a wgscan result from rehh using `scan_hh()` command for separate 29 chromosomes
+# For each pop, we run a ies2xpehh scan in R
