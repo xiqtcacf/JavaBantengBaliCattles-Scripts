@@ -1,4 +1,5 @@
-# snakemake to do mappability in reference genome.
+# snakemake to do mappability in reference genome, originally was developed by Genís Garcia-Erill
+
 # config requries:
 # ref: path to reference to do mappability on
 # outmain: folder to write results to
