@@ -1,0 +1,8 @@
+bams: /home/wlk579/1.0JavaBanteng_project/pop_info/PassedSampleQC.101inds.JavaBantengPro.species.pop.info.bamlist
+outmain: "results"
+chroms: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta.fai.autosomes.list
+regions: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/CombineAll/Banteng/nosexLinkedAndAbnormalScaff_rep_het_dep_map.regions
+params:
+ angsd:
+  minQ: 30
+  minMapQ: 25
