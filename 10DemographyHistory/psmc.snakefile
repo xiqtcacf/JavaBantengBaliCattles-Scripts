@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-# https://github.com/lh3/psmc
+# https://github.com/lh3/psmc, the script was origional developed by Kristian Hanghøj
 
 def add_ext(path, *args, sep=".", t=Path):
     p = str(path)
