@@ -1,0 +1,17 @@
+ingroup: banteng
+results_subdir: all_101inds_banteng
+ref:
+  name: Banteng_PlusMt.draft
+  fa: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta
+  fai: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta.fai
+sites: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/CombineAll/Banteng/nosexLinkedAndAbnormalScaff_rep_het_dep_map.bed
+tsv: /home/wlk579/1.0JavaBanteng_project/4.gts_genolikelihood/genotype_calling/tsvs/JavaBanteng.all101inds.tsv
+populations: /home/wlk579/1.0JavaBanteng_project/4.gts_genolikelihood/genotype_calling/tsvs/JavaBanteng.all101inds.tsv
+tmp_dir: /home/wlk579/Server_bos/scratch/tmp
+call_parameters:
+  baq: partial # bcftools BAQ setting to use, "with", "without", or "partial" (recommended)
+  block_size: 5000000 # Block size for scatter/gather calling
+  bq: 30 # minimum base quality
+  mq: 25 # minimum mapping quality
+  size_cutoff: 100000 # Minimum size of contigs for calls
+
