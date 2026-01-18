@@ -7,7 +7,7 @@ cd $DIR
 
 bedtools=/home/wlk579/Server_bos/apps/bedtools2/bin/bedtools
 bcftools=/home/wlk579/Server_bos/apps/bcftools
-realSFS=/home/users/xi/software/angsd/misc/realSFS
+realSFS=/home/wlk579/Server_bos/apps/angsd/misc/realSFS
 
 angsd=/maps/projects/bos/apps/angsd/angsd
 fasta=/home/wlk579/1.0JavaBanteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta
@@ -31,6 +31,6 @@ while read ind ; do
 
  $angsd sites index $ind.Good_sites_Banteng_NoRoh.regions
  $angsd -i $input/$ind.Banteng.bam -out $ind -doSaf 1 -anc $fasta -sites $ind.Good_sites_Banteng_NoRoh.regions -minMapQ 25 -minQ 30 -GL 2 -P 10
- $realSFS $ind.saf.idx -t 10 > $ind.saf.idx.sfs
+ $realSFS $ind.saf.idx > $ind.saf.idx.sfs
 
 done < ../../$batch
