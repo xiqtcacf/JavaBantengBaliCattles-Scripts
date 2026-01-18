@@ -1,4 +1,4 @@
-##### original from Popgen group in Copenhagen University, see the github link : https://github.com/popgenDK
+##### all scripts were originally developed by Popgen group in Copenhagen University, see the github link : https://github.com/popgenDK
 import itertools as it
 from pathlib import Path
 
