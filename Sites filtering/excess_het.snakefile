@@ -1,5 +1,5 @@
 """
-snakemake to do excess of heterozygosity filter
+snakemake to do excess of heterozygosity filter, originally was developed by Genís Garcia-Erill
 configfile needs:
        - info: file with bamfile in column1 and population assignment in column2 path to bamfile. Population is just for visualization, if unknown can be set to arbitrary value for all
        - chroms: path to file with list of chromosomes to use
