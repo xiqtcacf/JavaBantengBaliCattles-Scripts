@@ -1,0 +1,4 @@
+anc: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/water_buffalo.reference.fna
+bed: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/CombineAll/Waterbuffalo/nosexLinkedAndAbnormalScaff_rep_het_dep_map.regions
+chroms: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/water_buffalo.reference.fna.fai.autosomes.list
+bamlist: /home/wlk579/1.0JavaBanteng_project/6.4.Analyses.ABBABABA/correct_101inds/PassedSampleQC.101inds.JavaBantengPro.species.pop.info.bamlist
