@@ -15,12 +15,11 @@ bcftools=/home/wlk579/Server_bos/apps/bcftools
 File=imputed.maf0.01.r20.95.BantengPro.$batch.sites_variable_noindels_nomultiallelics
 input=./$File.bcf.gz
 
-
 ###filtering for bcf files cause here we used low depth data with 1x so no this filtering
 #depth filter (10 reads minimum)
-$bcftools plugin setGT --threads 20 $input --include FMT/DP<10 --target-gt q --new-gt . -O b -o Depth10.$File.bcf.gz
+#$bcftools plugin setGT --threads 20 $input --include FMT/DP<10 --target-gt q --new-gt . -O b -o Depth10.$File.bcf.gz
 #at least two heterozygous reads
-$bcftools plugin setGT --threads 20 Depth10.$File.bcf.gz --include 'FMT/GT=='het' & (FMT/AD[*:0]<3 | FMT/AD[*:1]<3)' --target-gt q --new-gt . -O b -o het2.Depth10.$File.bcf.gz
+#$bcftools plugin setGT --threads 20 Depth10.$File.bcf.gz --include 'FMT/GT=='het' & (FMT/AD[*:0]<3 | FMT/AD[*:1]<3)' --target-gt q --new-gt . -O b -o het2.Depth10.$File.bcf.gz
 
 #########filter and format preparation for one plink file including all individuals 101inds
 ###get plink input data sets running hardy-weinberg checking, and maf1%, geno0.05 missing
@@ -64,20 +63,6 @@ plink --bfile Filter.maf1.geno5.hwe.OHETabove0.5 \
       --make-bed \
       --out $output/$ind/$ind.Filter.maf1.geno5.hwe.OHETabove0.5
 ###ROH get
-plink --bfile $output/$ind/$ind.Filter.maf1.geno5.hwe.OHETabove0.5 \
-      --homozyg \
-      --homozyg-window-het 3 \
-      --allow-extra-chr \
-      --chr-set 29 \
-      --out $output/$ind/homozygwindowhet3.$ind.Filter.maf1.geno5.hwe.OHETabove0.5
-
-plink --bfile $output/$ind/$ind.Filter.maf1.geno5.hwe.OHETabove0.5 \
-      --homozyg \
-      --homozyg-window-het 2 \
-      --allow-extra-chr \
-      --chr-set 29 \
-      --out $output/$ind/homozygwindowhet2.$ind.Filter.maf1.geno5.hwe.OHETabove0.5
-
 plink --bfile $output/$ind/$ind.Filter.maf1.geno5.hwe.OHETabove0.5 \
       --homozyg \
       --homozyg-window-het 1 \
