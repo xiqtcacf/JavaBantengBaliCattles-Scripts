@@ -1,2 +1,4 @@
-We used the same genotype calling pipeline with Indonesian Cattle project, see details in here:
+We used the same genotype calling pipeline as in the Indonesian Cattle project. Detailed scripts and workflow are available at:
 https://github.com/xiqtcacf/IndonesianCattle-Scripts/tree/main/04_GenotypeCalling
+
+We provided project-specific configuration files here.
