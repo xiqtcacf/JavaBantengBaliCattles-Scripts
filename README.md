@@ -5,7 +5,11 @@
 A pipeline for mapping and post-mapping filtering using PALEOMIX BAM pipeline.
 
 ### Sample filtering
-A pipeline designed to remove problematic samples prior to downstream analyses.
+Script to assess post-mortem damage in historical samples using mapDamage2;
+
+A pipeline designed to remove problematic samples prior to downstream analyses;
+
+Script to perform a second and more sensitive analysis of relatedness within each sampling location using NgsRelate;
 
 ### Sites filtering
 A pipeline designed to avoid biases from low-quality mapping sites.
