@@ -14,9 +14,9 @@ BEDTOOLS="/maps/projects/bos/apps/bedtools2/bin/bedtools"
 R="Rscript"
 PYTHON="python3"
 
-COMBINE="scripts/combineDepths.R"
-PLOT="scripts/plotDepths.R"
-FILTER="scripts/doDepthFilter.py"
+COMBINE="filter_depth_scripts/combineDepths.R"
+PLOT="filter_depth_scripts/plotDepths.R"
+FILTER="filter_depth_scripts/doDepthFilter.py"
 
 OUTMAIN = config["outmain"]
 
