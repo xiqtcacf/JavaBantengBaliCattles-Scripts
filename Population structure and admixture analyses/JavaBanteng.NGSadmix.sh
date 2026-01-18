@@ -25,7 +25,6 @@ do
     grep "like=" $out/$nfile.$K.$f.log | cut -f2 -d " " | cut -f2 -d "=" >> $out/$nfile.$K.likes
     CONV=`Rscript -e "r<-read.table('$out/$nfile.$K.likes');r<-r[order(-r[,1]),];cat(sum(r[1]-r<3),'\n')"` #Check for convergence
 
-    #if [ $CONV -gt 4 ]  #-gt 2 = greater than 2
     if [ $CONV -gt 2 ]  #-gt 2 = greater than 2
     then
         cp $out/$nfile.$K.$f.qopt $out/$nfile.$K.$f.qopt_conv
