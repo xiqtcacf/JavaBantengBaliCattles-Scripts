@@ -1,6 +1,9 @@
 # Scripts for
 ## Wang, X., ... Heller, R. (2025). Population structure and domestication history of the Javan banteng.
 
+### evaluation of assembly
+
+
 ### Mapping
 A pipeline for mapping and post-mapping filtering using PALEOMIX BAM pipeline.
 
