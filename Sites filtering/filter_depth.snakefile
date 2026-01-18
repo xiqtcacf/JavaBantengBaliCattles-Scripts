@@ -1,5 +1,5 @@
 # snakemake to do depth filters: from group/s of bam files generates bed files with list of regions to keep after excluding regions with very low or very high local depth
-
+# originally was developed by Genís Garcia-Erill
 
 # config needs:
 # groups: group: bamlist (dict where keys are groups (e.g. lowdepth/highdepth) and values list of samples corresponding to that group.
