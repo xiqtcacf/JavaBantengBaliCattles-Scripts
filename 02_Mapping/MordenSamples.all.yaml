@@ -448,6 +448,12 @@
   Gir_BIGI4:
     BIGI4:
       SRR2016753: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR2016753_{Pair}.fastq.gz
+  
+ BGISeq-500case1:  ## standard BGI adapter
+  Options:
+    AdapterRemoval:
+       --adapter1: AAGTCGGAGGCCAAGCGGTCTTAGGAAGACAA
+       --adapter2: AAGTCGGATCGTAGCCATGTCGTTCTGTGAGCCAAGGAGTTG  
   Bhagnari_23:
     CL100007003_L01:
       SRR8156155: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR8156155_{Pair}.fastq.gz
@@ -457,6 +463,12 @@
   Lohani_18:
     CL100026723_L02:
       SRR8156148: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR8156148_{Pair}.fastq.gz
+
+ Illumina:  ## special case Illumina sequences adapter
+  Options:
+    AdapterRemoval:
+       --adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+       --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
   Sahiwal_Sha3b:
     Sha3b_lib1:
       SRR6936540: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR6936540_{Pair}.fastq.gz
