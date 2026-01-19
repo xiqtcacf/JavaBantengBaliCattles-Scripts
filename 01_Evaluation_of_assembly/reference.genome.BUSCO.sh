@@ -13,14 +13,11 @@ batch=$1
 run_BUSCO=/home/wlk579/Server_bos/apps/mamba/install/envs/busco5/lib/python3.9/site-packages/busco/run_BUSCO.py
 #conda activate busco5
 
-#python3 $run_BUSCO -m genome -i $batch.fasta -o $batch.eukaryota -l eukaryota_odb10 -c 20
+python3 $run_BUSCO -m genome -i $batch.fasta -o $batch.eukaryota -l eukaryota_odb10 -c 20
 python3 $run_BUSCO -m genome -i $batch.fasta -o $batch.cetartiodactyla -l cetartiodactyla_odb10 -c 20
-
-###evaluate annotation gene sets on kelly service by the newest version BUSCO 5.5.5
-#busco -m protein -i water_buffalo_GCF_003121395.1_ASM312139v1_protein.faa -o test.water_buffalo -l eukaryota_odb10
-#busco -m protein -i water_buffalo_GCF_003121395.1_ASM312139v1_protein.faa -o test.water_buffalo -l cetartiodactyla_odb10
 
 ### draw figures
 plot=/home/wlk579/Server_bos/apps/mamba/install/envs/busco5/bin/generate_plot.py
 
 python3 $plot -wd $batch.eukaryota
+python3 $plot -wd $batch.cetartiodactyla
