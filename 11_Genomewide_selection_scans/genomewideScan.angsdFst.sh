@@ -25,7 +25,6 @@ while read chr; do
 
 winsfs WildJavaBanteng.BantengRef.$chr.saf.idx Bali.BantengRef.$chr.saf.idx > WildJavaBanteng.Bali.BantengRef.$chr.2dsfs
 $realSFS fst index -whichFst 1 WildJavaBanteng.BantengRef.$chr.saf.idx Bali.BantengRef.$chr.saf.idx -P 30 -sfs WildJavaBanteng.Bali.BantengRef.$chr.2dsfs -fstout WildJavaBanteng.Bali.BantengRef.$chr
-$realSFS fst stats2 WildJavaBanteng.Bali.BantengRef.$chr.fst.idx -win 100000 -step 100000 > WildJavaBanteng.Bali.BantengRef.$chr.fst.win100K
 $realSFS fst stats2 WildJavaBanteng.Bali.BantengRef.$chr.fst.idx -win 50000 -step 50000 > WildJavaBanteng.Bali.BantengRef.$chr.fst.win50K
 
 # for revision to check the influence of step size to results
