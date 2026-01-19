@@ -55,7 +55,7 @@ Script to estimate domestication event between wild (Banteng-WildBorn) and domes
 
 Script to estimate Confidence interval using Fastsimcoal2;
 
-Script to perform simulations and calculate their Fst and pi;
+Script to perform simulations and calculate their Fst and pi during revision;
 
 All 14 demographic model design for estimating domestication event by Fastsimcoal2.
 
