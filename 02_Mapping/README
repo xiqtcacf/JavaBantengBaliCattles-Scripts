@@ -1,0 +1,4 @@
+We used the same mapping pipeline as in the Indonesian Cattle project. Detailed scripts and workflow are available at:
+https://github.com/xiqtcacf/IndonesianCattle-Scripts/tree/main/01_Mapping
+
+We only provided project-specific configuration files here.
