@@ -92,11 +92,8 @@
  Genomes:
   Banteng:
     Path: /home/wlk579/Server_bos/data/reference/banteng_denovo/Banteng_PlusMt.draft.fasta
-  BosTau9:
-    Path: /home/wlk579/Server_bos/data/reference/bosTau9.fasta
   Waterbuffalo:
     Path: /home/wlk579/Server_bos/data/reference/water_buffalo.reference.fna
-
 
  Illumina_HiSeq:  ## standard Illumina sequences adapter
   Options:
@@ -183,11 +180,10 @@
       SRR6448734: /home/wlk579/Server_bos/data/AncientSamples/Xi_download_Bos_Mikkel_Sinding_For_historical_data_NCBI/SRR6448734_{Pair}.fastq.gz
     YPR1115_DSW08717_L6:
       SRR6448735: /home/wlk579/Server_bos/data/AncientSamples/Xi_download_Bos_Mikkel_Sinding_For_historical_data_NCBI/SRR6448735_{Pair}.fastq.gz
-
   B._gaurus_W.Zoo_OGRUNKF_5:
     Ga5:
       ERR3305589: /home/wlk579/Server_bos/data/AncientSamples/Xi_download_Bos_Mikkel_Sinding_For_historical_data_NCBI/ERR3305589_{Pair}.fastq.gz
-
+####African buffalo
   S._caffer_98_608:
     S._caffer_98_6081:
       SRR4104498: /home/wlk579/Server_bos/data/AncientSamples/Xi_download_Bos_Mikkel_Sinding_For_historical_data_NCBI/SRR4104498_{Pair}.fastq.gz
@@ -195,3 +191,17 @@
       SRR6154014: /home/wlk579/Server_bos/data/AncientSamples/Xi_download_Bos_Mikkel_Sinding_For_historical_data_NCBI/SRR6154014_{Pair}.fastq.gz
     S._caffer_98_6083:
       SRR6154015: /home/wlk579/Server_bos/data/AncientSamples/Xi_download_Bos_Mikkel_Sinding_For_historical_data_NCBI/SRR6154015_{Pair}.fastq.gz
+
+ BGISeq-500:  ## standard BGI adapter
+  Options:
+    AdapterRemoval:
+       --adapter1: AAGTCGGAGGCCAAGCGGTCTTAGGAAGACAA
+       --adapter2: AAGTCGGATCGTAGCCATGTCGTTCTGTGAGCCAAGGAGTTG
+
+  Kenya_2_First:
+    Kenya_2_First:
+      SRR12452299: /home/wlk579/1.0JavaBanteng_project/data_bams_BantengRef_Origional/supply_buffol/KENYA_2/SRR12452299_{Pair}.fastq.gz
+
+  Kenya_2_Second:
+    Kenya_2_Second:
+      SRR12452300: /home/wlk579/1.0JavaBanteng_project/data_bams_BantengRef_Origional/supply_buffol/KENYA_2/SRR12452300_{Pair}.fastq.gz
