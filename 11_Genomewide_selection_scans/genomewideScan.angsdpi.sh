@@ -16,15 +16,16 @@ Banteng_fasta=/home/wlk579/1.0JavaBanteng_project/3.sites_filtering/Banteng_Plus
 Banteng_fai=/home/wlk579/1.0JavaBanteng_project/3.sites_filtering/bosTau9.fasta.fai
 Banteng_sites_filtering=/home/wlk579/1.0JavaBanteng_project/3.sites_filtering/CombineAll/CombinedAll.good_sites.Banteng.regions
 
+inputPop=/home/wlk579/1.0JavaBanteng_project/7.GT.Analyses.FstPi/pop
+
 ####50K window
 while read file ; do
 
+ winsfs $input/WildJavaBanteng.BantengRef.saf.idx  > /home/wlk579/1.0JavaBanteng_project/7.GT.Analyses.FstPi/Bantanc.1dsfs/WildJavaBanteng.Bantanc.1dsfs
  $realSFS saf2theta $input/WildJavaBanteng.BantengRef.saf.idx -outname WildJavaBanteng.BantengRef -sfs Bantanc.1dsfs/WildJavaBanteng.Bantanc.1dsfs
  $thetaStat do_stat WildJavaBanteng.BantengRef.thetas.idx -win 50000 -step 50000  -outnames WildJavaBanteng.BantengRef.thetas.win50k.thetasWindow.gz
 
-inputPop=/home/wlk579/1.0JavaBanteng_project/7.GT.Analyses.FstPi/pop
  winsfs $input/Bali.BantengRef.saf.idx  > /home/wlk579/1.0JavaBanteng_project/7.GT.Analyses.FstPi/Bantanc.1dsfs/Bali.Bantanc.1dsfs
- $angsd -bam $inputPop/Bali.bam -out Bali.BantengRef -doSaf 1 -anc $Banteng_fasta -sites $Banteng_sites_filtering -minMapQ 25 -minQ 30 -GL 2 -nThreads 20
  $realSFS saf2theta $input/Bali.BantengRef.saf.idx -outname Bali.BantengRef -sfs /home/wlk579/1.0JavaBanteng_project/7.GT.Analyses.FstPi/Bantanc.1dsfs/Bali.Bantanc.1dsfs
  $thetaStat do_stat Bali.BantengRef.thetas.idx -win 50000 -step 50000  -outnames Bali.BantengRef.thetas.win50k.thetasWindow.gz
 
