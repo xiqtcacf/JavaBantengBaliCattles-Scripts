@@ -100,6 +100,7 @@
     AdapterRemoval:
        --adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
        --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
 ####Indo Zoo Wild Banteng 8inds
   B._javanicus_MZBR1538:
     B._javanicus_MZBR1538:
@@ -172,6 +173,7 @@
     AdapterRemoval:
        --adapter1: AGGCCAAGCGGTCTTAGGAAGACAA
        --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+       
 ## Illumina adapter, BaliBali PLUS BaliKupang 34inds checking Banteng_allOthers.yaml and Banteng_Others.HighQuality.yaml
   N_2hmr:
     N_2hmr_FDSW210065883:
@@ -294,6 +296,7 @@
     AdapterRemoval:
        --adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
        --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
 ###Bali download cattles 5x checking Banteng_allOthers.yaml
   Bali_cattle_Indonesia_ypt2224:
     ypt2224_L8_I116:
@@ -338,7 +341,7 @@
       SRR4035282: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB10112_S1_L003_R{Pair}_001.fastq.gz
     200710002_run0152_LIB10112_S1_L004:
       SRR4035283: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB10112_S1_L004_R{Pair}_001.fastq.gz
-      
+
   LIB112399_Banteng_84B_Texas:
     LIB112399_Banteng_84B_Texas:
       run044: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB112399_S1_R{Pair}_001.fastq.gz
@@ -376,31 +379,7 @@
     LIB112409_Banteng_86B1_Texas:
      run035 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S8_R{Pair}_001.fastq.gz
      run036 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S5_R{Pair}_001.fastq.gz
-# becarefile to check uploads overrlapping#
-  LIB112399_Banteng_84B_Texas:
-    LIB112399_Banteng_84B_Texas:
-      run044: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB112399_S1_R{Pair}_001.fastq.gz
-  LIB112401_Banteng_79_1_Texas:
-    LIB112401_Banteng_79_1_Texas:
-      run044: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB112401_S3_R{Pair}_001.fastq.gz
-  LIB112403_Banteng_99B_Texas:
-    LIB112403_Banteng_99B_Texas:
-      run044: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB112403_S5_R{Pair}_001.fastq.gz
-      run045: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB112403_S3_R{Pair}_001.fastq.gz
-  LIB112406_Banteng_97_1_Texas:
-    LIB112406_Banteng_97_1_Texas:
-     run044: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB112406_S8_R{Pair}_001.fastq.gz
-  LIB112407_Banteng_85B_Texas:
-    LIB112407_Banteng_85B_Texas:
-      run035: /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112407_S6_R{Pair}_001.fastq.gz
-  LIB112408_Banteng_82B_Texas:
-    LIB112408_Banteng_82B_Texas:
-      run035: /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112408_S7_R{Pair}_001.fastq.gz
-  LIB112409_Banteng_86B1_Texas:
-    LIB112409_Banteng_86B1_Texas:
-     run035 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S8_R{Pair}_001.fastq.gz
-     run036 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S5_R{Pair}_001.fastq.gz
-     
+
 #####Checking Banteng_allOthers.yaml Banteng_Others.HighQuality.yaml  
   Dexter_AG0144:
     BTAUDXTAUSM000000AG0144-1:
@@ -464,7 +443,7 @@
     CL100026723_L02:
       SRR8156148: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR8156148_{Pair}.fastq.gz
 
- Illumina:  ## special case Illumina sequences adapter
+ Illumina:  ## Illumina sequences adapter
   Options:
     AdapterRemoval:
        --adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
