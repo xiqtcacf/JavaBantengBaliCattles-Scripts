@@ -62,7 +62,7 @@ Script to perform sliding window Fst, nucleotide diversity and Tajima’s D;
 
 Script to infer linkage disequilibrium by ngsLD;
 
-Script to infer XP-EHH.
+Script to infer XP-EHH (Sabhrina).
 
-### Genetic load
+### Sabhrina_Genetic load
 Scripts to infer genetic load.
