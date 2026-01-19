@@ -89,13 +89,11 @@
     # Generate summary table for each target (yes / no)
     Summary: yes
 
-
  Genomes:
   Banteng:
     Path: /home/wlk579/Server_bos/data/reference/banteng_denovo/Banteng_PlusMt.draft.fasta
   Waterbuffalo:
     Path: /home/wlk579/Server_bos/data/reference/water_buffalo.reference.fna
-
 
  Illumina:  ## the recommended sequences for trimming Illumina data
   Options:
@@ -168,7 +166,6 @@
     a12_FDSW210166087:
       Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a12_FDSW210166087-1r_HYKWTDSXY_L1_{Pair}.fq.gz
       Lane_2: /home/wlk579/Server_bos/data/Balis_Banteng/a12_FDSW210166087-1r_H75CFDSX2_L2_{Pair}.fq.gz
-
 
  NOVOGENE:  ## Illumina adapter
   Options:
@@ -330,7 +327,8 @@
   Bali_cattle_Indonesia_ypt2234:
     ypt2234_L1_I123:
       SRR6448722: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR6448722_{Pair}.fastq.gz
-#####Checking Banteng_allOthers.yaml Captive Bantengs, remember one individual is single end which need to be submit mapping seperately WaitingForSub.Banteng_singleEnd.yaml 
+
+#####Checking Banteng_allOthers.yaml Captive Bantengs, remember one individual is single end which need to be submit mapping seperately Banteng_singleEnd.yaml 
   B._javanicus_SD.Zoo_OR206:
     200710002_run0152_LIB10112_S1_L001:
       SRR4035280: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB10112_S1_L001_R{Pair}_001.fastq.gz
@@ -340,12 +338,7 @@
       SRR4035282: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB10112_S1_L003_R{Pair}_001.fastq.gz
     200710002_run0152_LIB10112_S1_L004:
       SRR4035283: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB10112_S1_L004_R{Pair}_001.fastq.gz
-  B._javanicus_W.Zoo_DB:
-    B._javanicus_W.Zoo_DB:
-      Banteng2_1_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/data_bams_BantengRef_Origional/all_other_map/fastq/Banteng2_1_1.fastq.gz
-      Banteng2_2_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/data_bams_BantengRef_Origional/all_other_map/fastq/Banteng2_2_1.fastq.gz
-      Banteng2_3_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/data_bams_BantengRef_Origional/all_other_map/fastq/Banteng2_3_1.fastq.gz
-      Banteng2_4_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/data_bams_BantengRef_Origional/all_other_map/fastq/Banteng2_4_1.fastq.gz
+      
   LIB112399_Banteng_84B_Texas:
     LIB112399_Banteng_84B_Texas:
       run044: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB112399_S1_R{Pair}_001.fastq.gz
@@ -407,7 +400,7 @@
     LIB112409_Banteng_86B1_Texas:
      run035 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S8_R{Pair}_001.fastq.gz
      run036 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S5_R{Pair}_001.fastq.gz
-
+     
 #####Checking Banteng_allOthers.yaml Banteng_Others.HighQuality.yaml  
   Dexter_AG0144:
     BTAUDXTAUSM000000AG0144-1:
@@ -488,11 +481,3 @@
   Vechur_SAMN10131258:
     Vechur_SAMN10131258:
       SRR8053287: /home/wlk579/Server_bos/data/Balis_Banteng/SRR8053287_{Pair}.fastq.gz
-
-###### Outgroups
-  B._bonasus_MdL1_Z3:
-    B._bonasus_MdL1_Z3:
-      Lane_1: /home/wlk579/Server_bos/data/AncientSamples/Xi_download_Bos_Mikkel_Sinding_For_historical_data_NCBI/SRR4853874_{Pair}.fastq.gz
-  B._bonasus_MdLC_Dy:
-    B._bonasus_MdLC_Dy:
-      Lane_1: /home/wlk579/Server_bos/data/AncientSamples/Xi_download_Bos_Mikkel_Sinding_For_historical_data_NCBI/SRR4861351_{Pair}.fastq.gz
