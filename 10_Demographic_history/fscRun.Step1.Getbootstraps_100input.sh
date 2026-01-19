@@ -16,9 +16,9 @@ Banteng_fai=/home/wlk579/1.0JavaBanteng_project/3.sites_filtering/Banteng_PlusMt
 Banteng_sites_filtering=/home/wlk579/1.0JavaBanteng_project/3.sites_filtering/CombineAll/CombinedAll.good_sites.Banteng.regions
 
 ###get 100 jacknife input files: unfold format
-#winsfs split --threads 40 -S 100 --tolerance 1e-8 --sfs ./WildJava.Bali.sfs ./WildJava.BantengRef.saf.idx ./Bali.BantengRef.saf.idx > ./winsfs.WildJava.Bali.sfs.100bootstraps
+winsfs split --threads 40 -S 100 --tolerance 1e-8 --sfs ./WildJava.Bali.sfs ./WildJava.BantengRef.saf.idx ./Bali.BantengRef.saf.idx > ./winsfs.WildJava.Bali.sfs.100bootstraps
 ### split them into 100 files: susbstract each block values
-#split -l2 --numeric-suffixes=0 winsfs.WildJava.Bali.sfs.100bootstraps 1
+split -l2 --numeric-suffixes=0 winsfs.WildJava.Bali.sfs.100bootstraps 1
 ### fold 2dsfs and change into fsc format
 for i in {100..199}
 do
