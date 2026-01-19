@@ -1,8 +1,8 @@
 # Scripts for
 ## Wang, X., ... Heller, R. (2025). Population structure and domestication history of the Javan banteng.
 
-### evaluation of assembly
-
+### Evaluation of assembly
+Scripts to evaluate assembly.
 
 ### Mapping
 A pipeline for mapping and post-mapping filtering using PALEOMIX BAM pipeline.
@@ -30,16 +30,12 @@ Script to infer principal component analysis (PCA) using HaploNet;
 
 Script to estimate admixture proportions for each individual using NGSadmix;
 
-Script to use evalAdmix;
-
-Script to perform apoh.
+Script to use evalAdmix.
 
 ### Genetic diversity, divergence and inbreeding
 Script to calculate genome-wide heterozygosity;
 
 Script to infer Pairwise global Fst between each pair of populations;
-
-Runs of homozygosity: 
 
 Script to infer runs of homozygosity (ROH);
 
